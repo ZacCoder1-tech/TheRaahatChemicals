@@ -1,0 +1,146 @@
+/* General Header Styling */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .nav-left{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-left: 20px;
+  } 
+  /* First Navbar (Contact Info) */
+  .navbar:first-child {
+    background: #392e2eee;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+    height: 120px;
+  }
+  
+  .nav-right {
+    display: flex;
+    gap: 25px;
+    height: 70px;
+    
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-icon {
+    color: #ffd700;
+    font-size: 1.2rem;
+  }
+  
+  /* Main Navigation Bar */
+  .navbar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #ffd700;
+  }
+  
+  /* Logo */
+  .nav-brand .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 60px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #ffd700;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .nav-search {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .nav-toggle:checked ~ .nav-menu {
+      display: flex;
+    }
+  
+    .nav-toggle-label {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+    .nav-toggle-label span {
+      background: #333;
+      width: 30px;
+      height: 3px;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+  }
+  

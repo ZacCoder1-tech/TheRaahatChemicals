@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #1a497c;
+    --secondary-color: #4a90e2;
+    --accent-color: #8bc34a;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+  }
+  
+  .infrastructure-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 150px;
+  }
+  
+  /* Hero Section */
+  .infra-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://bonnieplants.com/cdn/shop/articles/BONNIE_mint_iStock-543204012-1800px_4f952d52-ceef-4716-b9ba-063af39b87d7.jpg?v=1642541970&width=1800') center/cover;
+    color: white;
+    padding: 8rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Stats Bar */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: 8px;
+  }
+  
+  .stat-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Section Layout */
+  .infra-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem 0;
+  }
+  
+  .reversed {
+    direction: rtl;
+  }
+  
+  .reversed > * {
+    direction: ltr;
+  }
+  
+  .section-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .section-content {
+    padding: 2rem;
+  }
+  
+  .section-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .section-icon {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+  }
+  
+  .section-description {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  /* Features List */
+  .infra-features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .infra-features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .infra-features li::before {
+    content: "✓";
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+  
+  /* Quality Control Grid */
+  .qc-facilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .qc-item {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .infra-section {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .section-image img {
+      height: 300px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .infra-hero {
+      padding: 4rem 1rem;
+    }
+  
+    .section-content {
+      padding: 1rem;
+    }
+  }
