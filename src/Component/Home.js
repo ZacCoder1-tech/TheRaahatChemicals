@@ -1,5 +1,5 @@
 import img3 from './img3.jpg';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Carousel } from './Carousel';
 import './home.css';
 

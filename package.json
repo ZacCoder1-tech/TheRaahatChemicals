@@ -1,24 +1,16 @@
 {
-  "homepage": "https://ZacCoder1-tech.github.io/RahatChemicals",
+  "homepage": "https://the-raahat-chemicals.vercel.app",
   "name": "business-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "business-website": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^5.5.0",
-    "react-lazy-load-image-component": "^1.6.3",
-    "react-router-dom": "^7.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-router-dom": "^6.25.0",
+    "react-scripts": "^5.0.1",
+    "react-helmet-async": "^2.0.0", 
+    "react-icons": "^5.2.1",
+    "@fortawesome/react-fontawesome": "^0.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,15 +31,10 @@
     ]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version"]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
