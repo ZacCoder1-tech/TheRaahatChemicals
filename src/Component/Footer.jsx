@@ -42,7 +42,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Rahat Chemicals. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Raahat Chemicals. All rights reserved.</p>
         <div className="legal-links">
           <Link to="/privacy" className="footer-link">Privacy Policy</Link>
           <span> | </span>

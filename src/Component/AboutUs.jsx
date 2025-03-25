@@ -8,7 +8,7 @@ export const AboutUs = () => {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="hero-content">
-          <h1>About Rahat Chemicals</h1>
+          <h1>About Raahat Chemicals</h1>
           <p>Pioneers in Chemical Manufacturing Since 2000</p>
         </div>
       </section>
@@ -20,7 +20,7 @@ export const AboutUs = () => {
           <div className="text-content">
             <h2>Our Journey</h2>
             <p>
-              Established in 2002, Rahat Chemicals has grown from a small local manufacturer 
+              Established in 2002, Raahat Chemicals has grown from a small local manufacturer 
               to a nationally recognized leader in specialty chemical production. 
               With our roots in Budaun, Uttar Pradesh, we've consistently delivered 
               high-quality products while maintaining our commitment to environmental 

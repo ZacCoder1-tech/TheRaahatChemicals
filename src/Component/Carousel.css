@@ -1,7 +1,7 @@
 /* Carousel.css */
 .carousel-container {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -32,8 +32,8 @@
   
   .carousel-caption {
     position: absolute;
-    bottom: 20%;
-    left: 50%;
+    margin-bottom: -10px;
+    margin-left: 220px;
     transform: translateX(-50%);
     text-align: center;
     color: white;
@@ -60,9 +60,8 @@
   .carousel-indicators {
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 80%;
     transform: translateX(-50%);
-    display: flex;
     gap: 10px;
     z-index: 2;
   }
